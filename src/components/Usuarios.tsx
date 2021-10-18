@@ -10,6 +10,7 @@ export const Usuarios = () => {
         const {id, first_name, last_name, email, avatar } = usuario;
 
         return (
+            // id.toString() para RN
             <tr key={ id.toString() }>
                 <td>
                     <img 
@@ -39,7 +40,8 @@ export const Usuarios = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {
+                    {   
+                        // usuarios.map( usuario => renderItem(usuario) )
                         usuarios.map( renderItem )
                     }
                 </tbody>

@@ -3,7 +3,8 @@ import { useCounter } from '../hooks/useCounter'
 
 export const ContadorConHook = () => {
 
-    const {valor, acumular} = useCounter(100);
+    // Con el valor inicial default del hook useCounter puede o no tener un valor
+    const {valor, acumular} = useCounter(120);
 
     return (
         <>

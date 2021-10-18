@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+// Hook = Funcion o Lógica
 export const useCounter = ( inicial: number = 10) => {
     
     const [valor, setValor] = useState(inicial);

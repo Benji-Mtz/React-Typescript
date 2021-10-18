@@ -1,9 +1,9 @@
-import React from 'react'
 import { useState } from 'react'
+// rafc
 
 export const Contador = () => {
 
-    const [valor, setValor] = useState(0);
+    const [valor, setValor] = useState<number>(0);
 
     const acumular = ( numero: number ) => {
         setValor( valor + numero);

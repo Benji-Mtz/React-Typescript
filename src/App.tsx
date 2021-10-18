@@ -1,10 +1,12 @@
+/* npx create-react-app reforzamiento --template typescript */
+
 // import { Funciones } from "./typescript/Funciones";
 // import { ObjetosLiterales } from "./typescript/ObjetosLiterales";
 // import { TiposBasicos } from "./typescript/TiposBasicos";
 
 // import { Login } from "./components/Login";
-import { Formularios } from "./components/Formularios";
-// import { Usuarios } from "./components/Usuarios";
+import { Usuarios } from "./components/Usuarios";
+// import { Formularios } from "./components/Formularios";
 
 // import { ContadorConHook } from "./components/ContadorConHook";
 // import { Contador } from "./components/Contador";
@@ -22,8 +24,8 @@ function App() {
       {/* <Contador /> */}
       {/* <ContadorConHook /> */}
       {/* <Login /> */}
-      {/* <Usuarios /> */}
-      <Formularios />
+      <Usuarios />
+      {/* <Formularios /> */}
     </div>
   );
 }
