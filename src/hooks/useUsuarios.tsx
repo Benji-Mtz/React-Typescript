@@ -7,6 +7,7 @@ export const useUsuarios = () => {
     const [usuarios, setUsuarios] = useState<Usuario[]>([]);
 
     // Segun el objeto paginaRef su valor es paginaRef.current
+    // Evita refrescar TODA LA PAGINA
     const paginaRef = useRef(1);
 
     useEffect(() => {
@@ -16,6 +17,7 @@ export const useUsuarios = () => {
 
     const cargarUsuarios = async () => {
         const response = await reqResApi.get<ReqResListado>('/users',{
+            // Enviamos los parametros que es page para paginación
             params: {
                 page: paginaRef.current
             }

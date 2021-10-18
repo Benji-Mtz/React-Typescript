@@ -15,10 +15,11 @@ export const Formularios = () => {
                 className="form-control"
                 placeholder="Email"
                 value={ email }
+                // e.target.value -> {target}
                 onChange={ ({target}) => obtenerValorCampos(target.value, 'email') }
             />
             <input 
-                type="text" 
+                type="password" 
                 className="form-control mt-2 mb-2"
                 placeholder="Password"
                 value={ password }
